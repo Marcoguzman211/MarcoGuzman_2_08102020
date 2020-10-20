@@ -16,8 +16,12 @@ a {
      height: 7rem;
  }
 
+ /* Changement de couleur des icones */
+ .fa-color {
+     color: #0065FC;
+ }
+
  .header {
-     /* border: 2px solid #0065FC; */
      display: flex;
      justify-content: flex-end;
  }
@@ -60,3 +64,91 @@ a {
      margin-top: 0.2em;
  }
 
+/* Formulaire de recherche avec bouton */
+.searchForm {
+    display: inline-flex;
+}
+
+.searchIcon {
+    background-color: #F2F2F2;
+    padding: 1em;
+    border-radius: 1em 0 0 1em;
+}
+
+.searchInput {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    width: 12em; 
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1em;
+    box-sizing: border-box; 
+}
+
+.searchInput::placeholder {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+}
+
+.searchButton {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1em 1em 0;
+    padding: 0 1.5em;
+    cursor: pointer;   
+}
+
+/* Filtres */
+.filterContainer {
+    display: flex;
+    margin-top: 2em;
+    
+}
+
+.filterHeader {
+    font-size: 1em;
+    margin-right: 1em;
+}
+
+.filterItem {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+    border: 2px solid #d9d9d9;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+    
+}
+
+.filtersIcon {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3.5em;
+    width: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    
+}
+
+.filterInfo {
+    font-size: 0.8em;
+}
+
+.filterItemText {
+    display: flex;
+    margin: 0 1em;
+}
