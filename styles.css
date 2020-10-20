@@ -5,10 +5,58 @@ Les couleurs de la charte sont le bleu #0065FC,
 La police du site est Raleway. */
 
 body {
-    font-family: 'Raleway', 'Sans serif';
-    margin: 0;
-    
+    font-family: 'Raleway', sans-serif;
+    margin: 0 2em;
+}
+
+a {
+    text-decoration: none;
 }
  img {
      height: 7rem;
  }
+
+ .header {
+     /* border: 2px solid #0065FC; */
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ .headerLogo {
+     height: 3em;
+     margin-right: auto;
+ }
+/* Liens Hébergement, Activités et S'inscrire header */
+ .headerNav {
+     padding: 1em;
+ }
+
+ .headerNavItem  {
+    cursor: default;
+    margin-right: 3em; /*a modifier surement pour aligner avec les boites*/
+    
+ }
+
+ .headerNavItem:hover {
+     border-top: 2px solid #0065FC;
+     color: #0065FC;
+     padding-top: 0.8em;
+ }
+
+ /* S'inscrire */
+ .headerNavItem:nth-child(3) {
+    font-weight: bold;
+    color: #0065FC;
+ }
+
+ /* MAIN */
+ /*Recherche */
+ .searchHeader{
+     font-size: 1.2em;
+     margin-bottom: 0;
+ }
+
+ .searchParagraph {
+     margin-top: 0.2em;
+ }
+
