@@ -11,6 +11,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
  img {
      height: 7rem;
@@ -19,6 +20,10 @@ a {
  /* Changement de couleur des icones */
  .fa-color {
      color: #0065FC;
+ }
+
+ .fa-nocolor {
+     color: #939393;
  }
 
  .header {
@@ -146,9 +151,98 @@ a {
 
 .filterInfo {
     font-size: 0.8em;
+    display: flex;
+}
+
+.filterInfoWrap {
+    background-color: #white;
+    border-radius: 100%;
+    height: 1.5em;
+    width: 1.5em;
+    border: 2px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterInfoText {
+    display: flex;
+    margin-left: 0.5em;
+    align-self: center;
 }
 
 .filterItemText {
     display: flex;
     margin: 0 1em;
 }
+
+/*Hébergements*/
+/*container*/
+.hebergements {
+    display: flex;
+    place-items: center start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #d9d9d9;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-top: 2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+
+}
+
+.hebergementsHeader {
+    width: 100%;
+}
+
+/*Hosting card */
+.hebergementsCard {
+    display: flex;
+    padding: 0.2em 0.2em;
+    flex-direction: column;
+    align-items: left;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+/*Miniature image et texte en dessous */
+.hebergementCardMini {
+    padding-top: 0.1em;
+}
+
+.hebergementCardImage {
+    width: 15em;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+.hebergementCardMiniCaption {
+   margin-bottom: 0;
+   padding-left: 0.5em;
+}
+
+.hebergementCardPrice {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    padding-left: 0.5em;
+}
+
+.hebergementCardStars {
+    margin-left: 0.2em;
+    padding: 0.2em 0.5em;
+    padding-left: 0.3em; 
+    margin-bottom: 1em;
+}
+
+.hebergementsFooter {
+    /* justify-self: flex-end; */
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+
+
