@@ -1,364 +1,421 @@
-    /*Les icônes proviennent de la bibliothèque Font Awesome.
+/*Les icônes proviennent de la bibliothèque Font Awesome.
 Les couleurs de la charte sont le bleu #0065FC,
  et sa version plus claire #DEEBFF
  ainsi que le gris pour le fond #F2F2F2.
 La police du site est Raleway. */
-    
-    body {
-        font-family: 'Raleway', sans-serif;
-        margin: 0 2em;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    /* Changement de couleur des icones */
-    
-    .fa-color {
-        color: #0065FC;
-    }
-    
-    .fa-nocolor {
-        color: #F2F2F2;
-    }
-    
-    .header {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 2em;
-    }
-    
-    .headerLogo {
-        height: 3em;
-        margin-right: auto;
-    }
-    /* Liens Hébergement, Activités et S'inscrire header */
-    
-    .headerNav {
-        padding: 1em;
-    }
-    
-    .headerNavItem {
-        cursor: default;
-        margin-right: 3em;
-        /*a modifier surement pour aligner avec les boites */
-    }
-    
-    .headerNavItem:hover {
-        border-top: 2px solid #0065FC;
-        color: #0065FC;
-        padding-top: 0.8em;
-    }
-    /* S'inscrire */
-    
-    .headerNavItem:nth-child(3) {
-        font-weight: bold;
-        color: #0065FC;
-    }
-    /* MAIN */
-    /*Recherche */
-    
-    .rechercheWrap {
-        display: grid;
-    }
-    
-    .searchHeader {
-        font-size: 1.2em;
-        margin-bottom: 1em;
-    }
-    
-    .searchParagraph {
-        margin-bottom: 1em;
-    }
-    /* Formulaire de recherche avec bouton */
-    
-    .searchForm {
-        display: inline-flex;
-    }
-    
-    .searchIcon {
-        background-color: #F2F2F2;
-        padding: 1em;
-        border-radius: 1em 0 0 1em;
-    }
-    
-    .searchInput {
-        font-size: 1em;
-        font-weight: bold;
-        font-family: "Raleway", sans-serif;
-        min-width: 12em;
-        border-right: 0;
-        border-left: 0;
-        border-top: #F2F2F2 1px solid;
-        border-bottom: #F2F2F2 1px solid;
-        padding: 0 1em;
-        box-sizing: border-box;
-    }
-    
-    .searchInput::placeholder {
-        font-family: "Raleway", sans-serif;
-        font-size: 1em;
-        font-weight: bold;
-        color: #000;
-    }
-    
-    .searchButton {
-        font-family: "Raleway", sans-serif;
-        font-size: 1em;
-        background-color: #0065FC;
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: 0 1em 1em 0;
-        padding: 0 1.5em;
-        cursor: pointer;
-    }
-    /* Filtres */
-    
-    .filterContainer {
-        display: flex;
-        margin-top: 2em;
-    }
-    
-    .filterHeader {
-        font-size: 1em;
-        margin-right: 1em;
-    }
-    
-    .filterItem {
-        display: flex;
-        align-items: center;
-        margin-right: 2em;
-        border: 2px solid #d9d9d9;
-        border-radius: 2em;
-        margin-bottom: 1em;
-        cursor: pointer;
-        transition-duration: 0.1s;
-        font-weight: bold;
-    }
-    
-    .filterItem:hover {
-        transform: scale(1.1);
-    }
-    
-    .filtersIcon {
-        background-color: #DEEBFF;
-        border-radius: 100%;
-        height: 3.5em;
-        width: 3.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: -2px;
-    }
-    
-    .filterInfo {
-        font-size: 0.8em;
-        display: flex;
-    }
-    
-    .filterInfoWrap {
-        background-color: #fff;
-        border-radius: 100%;
-        height: 1.5em;
-        width: 1.5em;
-        border: 2px solid #d9d9d9;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .filterInfoText {
-        display: flex;
-        margin-left: 0.5em;
-        margin-bottom: 1em;
-        align-self: center;
-    }
-    
-    .filterItemText {
-        display: flex;
-        margin: 0 1em;
-    }
-    /* Container */
-    
-    .hostingMain,
-    .hostingPopular {
-        background-color: #F2F2F2;
-        border-radius: 1.5em;
-        padding: 2em;
-    }
-    
-    .hosting {
-        display: grid;
-        column-gap: 2em;
-        grid-template-columns: 2fr 1fr;
-    }
-    
-    .hostingMain {
-        display: grid;
-        column-gap: 2em;
-        row-gap: 2em;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    /*Hébergements */
-    
-    .hostingHeader {
-        grid-column: 1/-1;
-    }
-    
-    .hostingHeaderTitle {
-        margin: 0;
-    }
-    
-    .hostingCard {
-        background-color: #fff;
-        padding: 0.375em;
-        border-radius: 1.25em;
-        box-sizing: border-box;
-        height: 100%;
-    }
-    
-    .hostingCardFigure {
-        margin: 0;
-    }
-    
-    .hostingCardFigureImage {
-        height: 6em;
-        object-fit: cover;
-        object-position: center bottom;
-        max-width: 100%;
-        width: 100%;
-        max-height: 100%;
-        border-radius: 1em 1em 0 0;
-    }
-    
-    .hostingCardFigureText {
-        margin: 0.2em 0.7em 0 0.7em;
-    }
-    
-    .hostingCardDescription {
-        margin: 0.2em 0.7em 0.2em 0.7em;
-    }
-    
-    .hostingCardStars {
-        margin: 0 0.7em 0.2em 0.7em;
-    }
-    
-    .hostingAfficherPlus {
-        font-weight: bold;
-    }
-    
-    .hostingPopular {
-        display: grid;
-        row-gap: 2em;
-        align-items: start;
-        grid-template-rows: auto repeat(3, 1fr);
-    }
-    
-    .hostingPopularTitle {
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .hostingPopularWrap {
-        display: flex;
-        align-items: stretch;
-        height: 100%;
-        overflow: auto;
-    }
-    
-    .hostingPopularWrapImg {
-        position: relative;
-        min-height: 100%;
-        width: 33%;
-        min-width: 33%;
-        max-width: 33%;
-    }
-    
-    .hostingPopularCardImg {
-        border-radius: 1em 0 0 1em;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .popularWrapContent {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .espaceEntreDeux {
-        flex: 1;
-    }
-    /*Activiés*/
-    
-    .sectionActivites {
-        margin: 4em 0;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto auto;
-        grid-gap: 2em;
-    }
-    
-    .activitesHeader {
-        grid-column: 1/-1;
-        box-sizing: border-box;
-    }
-    
-    .activitesHeaderCaption {}
-    
-    .activitesCard {
-        display: flex;
-        flex-direction: column;
-        border: 2px solid #000000;
-        border-radius: 1em;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        height: 100%;
-        width: 100%;
-    }
-    
-    .activitesCardImg {
-        object-fit: cover;
-        border-radius: 1em 1em 0 0;
-        height: 100%;
-        width: 100%;
-    }
-    /* .pomegues {
-        height: 88%;
-    } */
-    
-    .activitesCardCaption {
-        border-radius: 0 0 1em 1em;
-        padding-left: 2em;
-        font-weight: bold;
-    }
-    
-    #act1 {
-        grid-column: 1/2;
-        grid-row: 2/4;
-    }
-    
-    #act2 {
-        grid-column: 2/3;
-    }
-    
-    #act3 {
-        grid-column: 2/3;
-    }
-    
-    #act4 {
-        grid-column: 3/4;
-        grid-row: 2/4;
-    }
-    
-    #act5 {
-        grid-column: 4/5;
-        grid-row: 2/3;
-    }
-    
-    #act6 {
-        grid-column: 4/5;
-    }
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Changement de couleur des icones */
+
+.fa-color {
+    color: #0065FC;
+}
+
+.fa-nocolor {
+    color: #F2F2F2;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+}
+
+.headerLogo {
+    height: 3em;
+    margin-right: auto;
+}
+
+
+/* Liens Hébergement, Activités et S'inscrire header */
+
+.headerNav {
+    padding: 1em;
+}
+
+.headerNavItem {
+    cursor: default;
+    margin-right: 1em;
+    padding: 0 3em;
+    /*a modifier surement pour aligner avec les boites */
+}
+
+.headerNavItem:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+    padding-top: 2.7em;
+    margin-top: 0;
+}
+
+
+/* S'inscrire */
+
+.headerNavItem:nth-child(3) {
+    font-weight: bold;
+    color: #0065FC;
+}
+
+
+/* MAIN */
+
+
+/*Recherche */
+
+.rechercheWrap {
+    display: grid;
+}
+
+.searchHeader {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.searchParagraph {
+    margin-bottom: 1em;
+}
+
+
+/* Formulaire de recherche avec bouton */
+
+.searchForm {
+    display: inline-flex;
+}
+
+.searchIcon {
+    background-color: #F2F2F2;
+    padding: 1em;
+    border-radius: 1em 0 0 1em;
+}
+
+.searchInput {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    min-width: 12em;
+    border-right: 0;
+    border-left: 0;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+.searchInput::placeholder {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+}
+
+.searchButton {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1em 1em 0;
+    padding: 0 1.5em;
+    cursor: pointer;
+}
+
+
+/* Filtres */
+
+.filterContainer {
+    display: flex;
+    margin-top: 2em;
+}
+
+.filterHeader {
+    font-size: 1em;
+    margin-right: 1em;
+}
+
+.filterItem {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+    border: 2px solid #d9d9d9;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+}
+
+.filterItem:hover {
+    transform: scale(1.1);
+}
+
+.filtersIcon {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3.5em;
+    width: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+}
+
+.filterInfo {
+    font-size: 0.8em;
+    display: flex;
+}
+
+.filterInfoWrap {
+    background-color: #fff;
+    border-radius: 100%;
+    height: 1.5em;
+    width: 1.5em;
+    border: 2px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterInfoText {
+    display: flex;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+    align-self: center;
+}
+
+.filterItemText {
+    display: flex;
+    margin: 0 1em;
+}
+
+
+/* Container */
+
+.hostingMain,
+.hostingPopular {
+    background-color: #F2F2F2;
+    border-radius: 1.5em;
+    padding: 2em;
+}
+
+.hosting {
+    display: grid;
+    column-gap: 2em;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 2em;
+}
+
+.hostingMain {
+    display: grid;
+    column-gap: 2em;
+    row-gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/*Hébergements */
+
+.hostingHeader {
+    grid-column: 1/-1;
+}
+
+.hostingHeaderTitle {
+    margin: 0;
+}
+
+.hostingCard {
+    background-color: #fff;
+    padding: 0.375em;
+    border-radius: 1.25em;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.hostingCard:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hostingCardFigure {
+    margin: 0;
+}
+
+.hostingCardFigureImage {
+    height: 6em;
+    object-fit: cover;
+    object-position: center bottom;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.hostingCardFigureText {
+    margin: 0.2em 0.7em 0 0.7em;
+}
+
+.hostingCardDescription {
+    margin: 0.2em 0.7em 0.2em 0.7em;
+}
+
+.hostingCardStars {
+    margin: 0 0.7em 0.2em 0.7em;
+}
+
+.hostingAfficherPlus {
+    font-weight: bold;
+}
+
+.hostingPopular {
+    display: grid;
+    row-gap: 2em;
+    align-items: start;
+    grid-template-rows: auto repeat(3, 1fr);
+}
+
+.hostingPopularTitle {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hostingPopularWrap {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
+}
+
+.hostingPopularWrapImg {
+    position: relative;
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+}
+
+.hostingPopularCardImg {
+    border-radius: 1em 0 0 1em;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popularWrapContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.espaceEntreDeux {
+    flex: 1;
+}
+
+
+/*Activiés*/
+
+.sectionActivites {
+    margin: 4em 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 2em;
+}
+
+.activitesHeader {
+    grid-column: 1/-1;
+    box-sizing: border-box;
+}
+
+.activitesCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.activitesCardImg {
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+    height: 100%;
+    width: 100%;
+}
+
+.activitesCardCaption {
+    border-radius: 0 0 1em 1em;
+    padding-left: 2em;
+    font-weight: bold;
+}
+
+#act1 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+#act2 {
+    grid-column: 2/3;
+}
+
+#act3 {
+    grid-column: 2/3;
+}
+
+#act4 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+#act5 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#act6 {
+    grid-column: 4/5;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #f2f2f2;
+    display: flex;
+    /* padding: 0 4em; */
+    justify-content: space-between;
+}
+
+.aPropos {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 1em;
+    /* margin-right: 5em; */
+}
+
+.ourHosting {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 2em; */
+}
+
+.assistance {
+    display: flex;
+    flex-direction: column;
+    margin-right: 35em;
+}
+
+.flexHeader {}
+
+.flexItem {
+    margin-bottom: 1em;
+}
