@@ -1,0 +1,179 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.headerLogo {
+    padding-left: 1em;
+}
+
+@media screen and (max-width: 425px) {
+    .headerLogo {
+        padding-left: 5em;
+    }
+}
+
+.headerNavItem {
+    margin-right: none;
+}
+
+.headerNavItem:nth-child(2):hover,
+.headerNavItem:nth-child(3):hover {
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+}
+
+
+/*Hebergement */
+
+.headerNavItem:nth-child(2) {
+    grid-area: 2 / 1 / 2 / 1;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+
+/*Activités */
+
+.headerNavItem:nth-child(3) {
+    border-bottom: 2px solid #f2f2f2;
+}
+
+
+/*S'inscrire */
+
+.headerNavItem:nth-child(4) {
+    grid-area: 1 / 2 / 1 / 2;
+    padding-right: 1em;
+    margin-right: 0;
+}
+
+
+/*Recherche */
+
+.searchHeader {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.searchForm {
+    width: 100%;
+}
+
+.searchInput {
+    min-width: 5em;
+}
+
+
+/*Filtres */
+
+.filterContainer {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.filterHeader {
+    flex: 0 0 100%;
+}
+
+.filterItem {
+    margin-right: none;
+    margin-bottom: none;
+}
+
+
+/*Main*/
+
+.hosting {
+    grid-template-columns: auto;
+    grid-row: 1fr 1fr;
+    row-gap: 2em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hostingMain {
+    background-color: #fff;
+    border-radius: none;
+    padding: none;
+}
+
+.hostingMain {
+    grid-template-columns: 1fr;
+    border-radius: none;
+}
+
+.hostingMain .hostingCard {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hostingPopular {
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+
+/*Activites*/
+
+.sectionActivites {
+    margin-top: 1em;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 12em 12em 12em 12em 12em 12em;
+}
+
+.activitesHeader {
+    grid-column: 1/-1;
+    grid-row: 1 / 2;
+    box-sizing: border-box;
+}
+
+.CardImgGrd,
+.imgPomegues {
+    height: 70%;
+}
+
+#act1,
+#act2,
+#act3,
+#act4,
+#act5,
+#act6 {
+    grid-column: 1/ 2;
+}
+
+#act1 {
+    grid-row: 2 / 3;
+}
+
+#act2 {
+    grid-row: 3/4;
+}
+
+#act3 {
+    grid-row: 4/5;
+}
+
+#act4 {
+    grid-row: 5/6;
+}
+
+#act5 {
+    grid-row: 6/7;
+}
+
+#act6 {
+    grid-row: 7 / 8;
+}
+
+
+/* Footer */
+
+.footer {
+    flex-direction: column;
+    padding: 1em;
+}
+
+.aPropos {
+    margin-left: 0;
+}
