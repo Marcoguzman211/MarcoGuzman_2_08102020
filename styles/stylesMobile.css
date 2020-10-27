@@ -1,9 +1,14 @@
+body {
+    margin: 0;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: max-content;
     position: relative;
+    margin: 2em;
 }
 
 .headerLogo {
@@ -20,6 +25,22 @@
     .headerNavItem:nth-child(2) {
         padding: 1em 0 0 3em;
         padding-left: 1em;
+    }
+    .searchButton {
+        display: none;
+    }
+    .searchButtonMobile {
+        display: inline-flex;
+        align-items: center;
+        font-family: "Raleway", sans-serif;
+        font-size: 1em;
+        background-color: #0065FC;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 0 1em 1em 0;
+        padding: 0 1.5em;
+        cursor: pointer;
     }
 }
 
@@ -61,6 +82,10 @@
 
 /*Recherche */
 
+.rechercheWrap {
+    margin: 2em;
+}
+
 .searchHeader {
     display: flex;
     flex-wrap: wrap;
@@ -96,6 +121,11 @@
 /*Main*/
 
 .hosting {
+    width: 100%;
+    border-radius: 0;
+}
+
+.hosting {
     grid-template-columns: auto;
     grid-row: 1fr 1fr;
     row-gap: 2em;
@@ -120,13 +150,14 @@
 
 .hostingPopular {
     grid-area: 1 / 1 / 1 / 1;
+    border-radius: 0;
 }
 
 
 /*Activites*/
 
 .sectionActivites {
-    margin-top: 1em;
+    margin: 1em 2em 0 2em;
     grid-template-columns: 100%;
     grid-template-rows: auto 12em 12em 12em 12em 12em 12em;
 }
@@ -180,9 +211,19 @@
 
 .footer {
     flex-direction: column;
-    padding: 1em;
+    padding: 2em;
+    margin-top: 2em;
 }
 
 .aPropos {
     margin-left: 0;
+}
+
+.assistance {
+    ;
+}
+
+.centreAide,
+.nousContacter {
+    width: 12em;
 }
