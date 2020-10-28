@@ -11,6 +11,11 @@
             border-radius: 0;
         }
         
+        .hostingMain {
+            grid-template-columns: 1fr 1fr;
+            border-radius: none;
+        }
+        
         .hostingPopular {
             grid-template-rows: auto auto;
             grid-template-columns: 1fr 1fr 1fr;
@@ -67,7 +72,7 @@
             }
         }
         
-        @media (min-width: 481px) and (max-width: 639px) {
+        @media (min-width: 481px) and (max-width: 694px) {
             .sectionActivites {
                 margin: 1em 2em 0 2em;
                 grid-template-columns: 100%;
@@ -108,13 +113,23 @@
             #act6 {
                 grid-row: 7 / 8;
             }
+            .footer {
+                margin-top: 2em;
+                padding: 2em;
+                flex-wrap: wrap;
+                column-gap: 3em;
+            }
+            .aPropos {
+                padding: 0;
+                margin: 0;
+            }
         }
         
         .footer {
+            margin-top: 2em;
             column-gap: 8em;
         }
-        
-        .aPropos {
+        /* .aPropos {
             flex-grow: 2;
         }
         
@@ -124,4 +139,4 @@
         
         .assistance {
             flex-grow: 1;
-        }
+        } */
