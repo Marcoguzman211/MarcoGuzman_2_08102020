@@ -1,0 +1,127 @@
+        .filterContainer {
+            flex-wrap: wrap;
+        }
+        
+        .hosting {
+            grid-template-columns: auto;
+            grid-row: 1fr 1fr;
+            row-gap: 2em;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 0;
+        }
+        
+        .hostingPopular {
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-area: 1 / 1 / 1 / 1;
+            border-radius: 0;
+            column-gap: 2em;
+            border-radius: 1.5em;
+        }
+        
+        .hostingPopularTitle {
+            grid-column: 1 / -1;
+        }
+        
+        @media screen and (max-width: 820px) {
+            .hostingPopular {
+                grid-template-rows: auto repeat(3, 12em);
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (min-width:640px) and (max-width: 1024px) {
+            .sectionActivites {
+                grid-template-columns: auto auto;
+                grid-template-rows: auto 14em 14em;
+            }
+            .CardImgGrd {
+                height: 75%;
+            }
+            .imgPomegues,
+            .ImgFrioul {
+                height: 75%;
+            }
+            #act1 {
+                grid-row: 2 / 3;
+            }
+            #act2 {
+                grid-row: 2/3;
+            }
+            #act3 {
+                grid-column: 3/4;
+                grid-row: 2/3;
+            }
+            #act4 {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            #act5 {
+                grid-column: 2/3;
+                grid-row: 3/4;
+            }
+            #act6 {
+                grid-column: 3/4;
+                grid-row: 3/4;
+            }
+        }
+        
+        @media (min-width: 481px) and (max-width: 639px) {
+            .sectionActivites {
+                margin: 1em 2em 0 2em;
+                grid-template-columns: 100%;
+                grid-template-rows: auto 12em 12em 12em 12em 12em 12em;
+            }
+            .activitesHeader {
+                grid-column: 1/-1;
+                grid-row: 1 / 2;
+                box-sizing: border-box;
+            }
+            .CardImgGrd,
+            .imgPomegues {
+                height: 70%;
+            }
+            #act1,
+            #act2,
+            #act3,
+            #act4,
+            #act5,
+            #act6 {
+                grid-column: 1/ 2;
+            }
+            #act1 {
+                grid-row: 2 / 3;
+            }
+            #act2 {
+                grid-row: 3/4;
+            }
+            #act3 {
+                grid-row: 4/5;
+            }
+            #act4 {
+                grid-row: 5/6;
+            }
+            #act5 {
+                grid-row: 6/7;
+            }
+            #act6 {
+                grid-row: 7 / 8;
+            }
+        }
+        
+        .footer {
+            column-gap: 8em;
+        }
+        
+        .aPropos {
+            flex-grow: 2;
+        }
+        
+        .ourHosting {
+            flex-grow: 1;
+        }
+        
+        .assistance {
+            flex-grow: 1;
+        }

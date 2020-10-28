@@ -121,16 +121,12 @@ body {
 /*Main*/
 
 .hosting {
-    width: 100%;
-    border-radius: 0;
-}
-
-.hosting {
     grid-template-columns: auto;
     grid-row: 1fr 1fr;
     row-gap: 2em;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 0;
 }
 
 .hostingMain {
@@ -217,10 +213,6 @@ body {
 
 .aPropos {
     margin-left: 0;
-}
-
-.assistance {
-    ;
 }
 
 .centreAide,
