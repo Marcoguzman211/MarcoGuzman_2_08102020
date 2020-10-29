@@ -436,3 +436,20 @@ a {
 .flexItem {
     margin-bottom: 1em;
 }
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        flex-direction: row;
+    }
+    .aPropos {
+        margin-right: 14em;
+    }
+    .ourHosting {
+        margin-right: 14em;
+    }
+    .centreAide,
+    .nousContacter {
+        width: 12em;
+    }
+    .assistance {}
+}

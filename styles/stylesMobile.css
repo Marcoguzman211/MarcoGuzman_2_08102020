@@ -15,12 +15,15 @@ body {
     padding-left: 1em;
 }
 
+
+/* 449 */
+
 @media screen and (max-width: 449px) {
     .header {
         width: max-content;
     }
     .headerLogo {
-        /* padding-left: 1em; */
+        padding-left: 0;
     }
     .headerNavItem:nth-child(2) {
         padding: 1em 0 0 3em;
