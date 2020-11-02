@@ -136,19 +136,23 @@
 }
 
 .footer {
-    width: 100%;
+    width: auto;
     margin-top: 2em;
     column-gap: 8em;
 }
 
 .aPropos {
-    margin-right: 5em;
+    padding-left: 1em;
+    width: 33.3%;
+    /* margin-right: 5em; */
 }
 
 .ourHosting {
-    margin-right: 5em;
+    /* margin-right: 5em; */
+    width: 33.3%;
 }
 
 .assistance {
-    padding-right: 1em;
+    /* padding-right: 1em; */
+    width: 33.3%;
 }

@@ -416,18 +416,21 @@ a {
     display: flex;
     flex-direction: column;
     align-items: left;
+    width: 33.3%;
     margin-left: 1em;
 }
 
 .ourHosting {
     display: flex;
     flex-direction: column;
+    width: 33.3%;
 }
 
 .assistance {
     display: flex;
     flex-direction: column;
-    margin-right: 35em;
+    width: 33.3%;
+    /* margin-right: 35em; */
 }
 
 .flexItem {
