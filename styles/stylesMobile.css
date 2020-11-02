@@ -15,9 +15,6 @@ body {
     padding-left: 1em;
 }
 
-
-/* 449 */
-
 @media screen and (max-width: 449px) {
     .header {
         width: max-content;
@@ -167,7 +164,7 @@ body {
     box-sizing: border-box;
 }
 
-.CardImgGrd,
+.cardImgGrd,
 .imgPomegues {
     height: 70%;
 }

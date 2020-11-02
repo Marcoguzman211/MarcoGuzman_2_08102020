@@ -355,7 +355,7 @@ a {
     width: 100%;
 }
 
-.CardImgGrd {
+.cardImgGrd {
     height: 90%;
 }
 
@@ -409,7 +409,6 @@ a {
 .footer {
     background-color: #f2f2f2;
     display: flex;
-    /* padding: 0 4em; */
     justify-content: space-between;
 }
 
@@ -418,13 +417,11 @@ a {
     flex-direction: column;
     align-items: left;
     margin-left: 1em;
-    /* margin-right: 5em; */
 }
 
 .ourHosting {
     display: flex;
     flex-direction: column;
-    /* margin-right: 2em; */
 }
 
 .assistance {
@@ -451,5 +448,4 @@ a {
     .nousContacter {
         width: 12em;
     }
-    .assistance {}
 }
