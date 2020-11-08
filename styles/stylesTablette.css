@@ -136,7 +136,7 @@
 }
 
 .footer {
-    width: auto;
+    /* width: auto; */
     margin-top: 2em;
     column-gap: 8em;
 }

@@ -25,6 +25,9 @@ a {
     color: #F2F2F2;
 }
 
+
+/*Header*/
+
 .header {
     display: flex;
     justify-content: flex-end;
@@ -442,10 +445,10 @@ a {
         flex-direction: row;
     }
     .aPropos {
-        margin-right: 14em;
+        /* margin-right: 14em; */
     }
     .ourHosting {
-        margin-right: 14em;
+        /* margin-right: 14em; */
     }
     .centreAide,
     .nousContacter {
