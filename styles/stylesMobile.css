@@ -112,17 +112,11 @@ body {
     flex: 0 0 100%;
 }
 
-.filterItem {
-    margin-right: none;
-    margin-bottom: none;
-}
-
 
 /*Main*/
 
 .hosting {
     grid-template-columns: auto;
-    grid-row: 1fr 1fr;
     row-gap: 2em;
     width: 100%;
     box-sizing: border-box;
@@ -131,13 +125,11 @@ body {
 
 .hostingMain {
     background-color: #fff;
-    border-radius: none;
-    padding: none;
+    /*Eliminer bords sur le côté */
 }
 
 .hostingMain {
     grid-template-columns: 1fr;
-    border-radius: none;
 }
 
 .hostingMain .hostingCard {
@@ -155,6 +147,7 @@ body {
 .sectionActivites {
     margin: 1em 2em 0 2em;
     grid-template-columns: 100%;
+    /*Alignement égal entres les cartes */
     grid-template-rows: auto 12em 12em 12em 12em 12em 12em;
 }
 
