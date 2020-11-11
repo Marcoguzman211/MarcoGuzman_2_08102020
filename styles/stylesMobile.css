@@ -1,214 +1,231 @@
-body {
-    margin: 0;
-}
-
-.header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: max-content;
-    position: relative;
-    margin: 2em;
-}
-
-.headerLogo {
-    padding-left: 1em;
-}
-
-@media screen and (max-width: 449px) {
-    .header {
-        width: max-content;
-    }
-    .headerLogo {
-        padding-left: 0;
-    }
-    .headerNavItem:nth-child(2) {
-        padding: 1em 0 0 3em;
-        padding-left: 1em;
-    }
-    .searchButton {
-        display: none;
-    }
-    .searchButtonMobile {
-        display: inline-flex;
-        align-items: center;
-        font-family: "Raleway", sans-serif;
-        font-size: 1em;
-        background-color: #0065FC;
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: 0 1em 1em 0;
-        padding: 0 1.5em;
-        cursor: pointer;
-    }
-}
-
-.headerNavItem:nth-child(2):hover,
-.headerNavItem:nth-child(3):hover {
-    border-top: none;
-    border-bottom: 2px solid #0065FC;
-}
-
-
-/*Hebergement */
-
-.headerNavItem:nth-child(2) {
-    grid-area: 2 / 1 / 2 / 1;
-    border-bottom: 2px solid #f2f2f2;
-}
-
-
-/*Activités */
-
-.headerNavItem:nth-child(3) {
-    border-bottom: 2px solid #f2f2f2;
-}
-
-
-/*S'inscrire */
-
-.headerNavItem:nth-child(4) {
-    grid-area: 1 / 2 / 1 / 2;
-    padding-right: 1em;
-    margin-right: 0;
-}
-
-.headerNavItem:nth-child(4):hover {
-    border-top: none;
-    transform: scale(1.1);
-}
-
-
-/*Recherche */
-
-.rechercheWrap {
-    margin: 2em;
-}
-
-.searchHeader {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.searchForm {
-    width: 100%;
-}
-
-.searchInput {
-    min-width: 5em;
-}
-
-
-/*Filtres */
-
-.filterContainer {
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.filterHeader {
-    flex: 0 0 100%;
-}
-
-
-/*Main*/
-
-.hosting {
-    grid-template-columns: auto;
-    row-gap: 2em;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 0;
-}
-
-.hostingMain {
-    background-color: #fff;
-    /*Eliminer bords sur le côté */
-}
-
-.hostingMain {
-    grid-template-columns: 1fr;
-}
-
-.hostingMain .hostingCard {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.hostingPopular {
-    grid-area: 1 / 1 / 1 / 1;
-    border-radius: 0;
-}
-
-
-/*Activites*/
-
-.sectionActivites {
-    margin: 1em 2em 0 2em;
-    grid-template-columns: 100%;
-    /*Alignement égal entres les cartes */
-    grid-template-rows: auto 12em 12em 12em 12em 12em 12em;
-}
-
-.activitesHeader {
-    grid-column: 1/-1;
-    grid-row: 1 / 2;
-    box-sizing: border-box;
-}
-
-.cardImgGrd,
-.imgPomegues {
-    height: 70%;
-}
-
-#act1,
-#act2,
-#act3,
-#act4,
-#act5,
-#act6 {
-    grid-column: 1/ 2;
-}
-
-#act1 {
-    grid-row: 2 / 3;
-}
-
-#act2 {
-    grid-row: 3/4;
-}
-
-#act3 {
-    grid-row: 4/5;
-}
-
-#act4 {
-    grid-row: 5/6;
-}
-
-#act5 {
-    grid-row: 6/7;
-}
-
-#act6 {
-    grid-row: 7 / 8;
-}
-
-
-/* Footer */
-
-.footer {
-    flex-direction: column;
-    padding: 2em;
-    margin-top: 2em;
-}
-
-.aPropos {
-    margin-left: 0;
-}
-
-.centreAide,
-.nousContacter {
-    width: 12em;
-}
+        body {
+            margin: 0;
+        }
+        
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: max-content;
+            position: relative;
+            margin: 2em;
+        }
+        
+        .headerLogo {
+            padding-left: 1em;
+        }
+        
+        @media screen and (max-width: 449px) {
+            .header {
+                width: max-content;
+            }
+            .headerLogo {
+                padding-left: 0;
+            }
+            .headerNavItem:nth-child(2) {
+                padding: 1em 0 0 3em;
+                padding-left: 1em;
+            }
+            .searchButton {
+                display: none;
+            }
+            .searchButtonMobile {
+                display: inline-flex;
+                align-items: center;
+                font-family: "Raleway", sans-serif;
+                font-size: 1em;
+                background-color: #0065FC;
+                color: white;
+                font-weight: bold;
+                border: none;
+                border-radius: 0 1em 1em 0;
+                padding: 0 1.5em;
+                cursor: pointer;
+            }
+        }
+        
+        .headerNavItem:nth-child(2):hover,
+        .headerNavItem:nth-child(3):hover {
+            border-top: none;
+            border-bottom: 2px solid #0065FC;
+        }
+        /*Hebergement */
+        
+        .headerNavItem:nth-child(2) {
+            grid-area: 2 / 1 / 2 / 1;
+            border-bottom: 2px solid #f2f2f2;
+        }
+        /*Activités */
+        
+        .headerNavItem:nth-child(3) {
+            border-bottom: 2px solid #f2f2f2;
+        }
+        /*S'inscrire */
+        
+        .headerNavItem:nth-child(4) {
+            grid-area: 1 / 2 / 1 / 2;
+            padding-right: 1em;
+            margin-right: 0;
+        }
+        
+        .headerNavItem:nth-child(4):hover {
+            border-top: none;
+            transform: scale(1.1);
+        }
+        /*Recherche */
+        
+        .rechercheWrap {
+            margin: 2em;
+        }
+        
+        .searchHeader {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        
+        .searchForm {
+            width: 100%;
+        }
+        
+        .searchInput {
+            min-width: 5em;
+        }
+        /*Filtres */
+        
+        .filterContainer {
+            /* max-width: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            max-width: 100%;
+            position: relative;
+            /* margin: 2em; */
+        }
+        
+        .filterHeader {
+            /* flex: 0 0 100%; */
+            grid-column: 1 / 3;
+        }
+        
+        .filterItem:nth-child(2) {
+            /* flex: 0 0 50%; */
+            grid-column: 1 / 2;
+            margin-right: 0.5em;
+        }
+        
+        .filterItem:nth-child(3) {
+            /* flex: 0 0 50%; */
+            grid-column: 2/3;
+            margin-right: 0;
+        }
+        
+        .filterItem:nth-child(4) {
+            /* flex: 0 0 100%; */
+            grid-column: 1/3;
+            max-width: 70%;
+        }
+        
+        .filterItem:nth-child(5) {
+            /* flex: 0 0 100%; */
+            grid-column: 1/3;
+            max-width: 70%;
+        }
+        /*Main*/
+        
+        .hosting {
+            grid-template-columns: auto;
+            row-gap: 2em;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 0;
+        }
+        
+        .hostingMain {
+            background-color: #fff;
+            /*Eliminer bords sur le côté */
+        }
+        
+        .hostingMain {
+            grid-template-columns: 1fr;
+        }
+        
+        .hostingMain .hostingCard {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hostingPopular {
+            grid-area: 1 / 1 / 1 / 1;
+            border-radius: 0;
+        }
+        /*Activites*/
+        
+        .sectionActivites {
+            margin: 1em 2em 0 2em;
+            grid-template-columns: 100%;
+            /*Alignement égal entres les cartes */
+            grid-template-rows: auto 12em 12em 12em 12em 12em 12em;
+        }
+        
+        .activitesHeader {
+            grid-column: 1/-1;
+            grid-row: 1 / 2;
+            box-sizing: border-box;
+        }
+        
+        .cardImgGrd,
+        .imgPomegues {
+            height: 70%;
+        }
+        
+        #act1,
+        #act2,
+        #act3,
+        #act4,
+        #act5,
+        #act6 {
+            grid-column: 1/ 2;
+        }
+        
+        #act1 {
+            grid-row: 2 / 3;
+        }
+        
+        #act2 {
+            grid-row: 3/4;
+        }
+        
+        #act3 {
+            grid-row: 4/5;
+        }
+        
+        #act4 {
+            grid-row: 5/6;
+        }
+        
+        #act5 {
+            grid-row: 6/7;
+        }
+        
+        #act6 {
+            grid-row: 7 / 8;
+        }
+        /* Footer */
+        
+        .footer {
+            flex-direction: column;
+            padding: 2em;
+            margin-top: 2em;
+        }
+        
+        .aPropos {
+            margin-left: 0;
+        }
+        
+        .centreAide,
+        .nousContacter {
+            width: 12em;
+        }
